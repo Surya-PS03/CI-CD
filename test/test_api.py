@@ -22,3 +22,9 @@ def test_get_name():
     response = client.get("/get_name")
     assert response.status_code == 200
     assert response.json() == {"message":"My name is Surya"}
+
+def test_home():
+    response = client.get("/home")
+
+    assert response.status_code == 200
+    assert response.json() == {"message":"This is the home page"}

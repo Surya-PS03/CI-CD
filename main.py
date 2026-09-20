@@ -13,3 +13,7 @@ async def hello():
 @app.get("/get_name")
 async def getName():
     return {"message":"My name is Surya"}
+
+@app.get("/home")
+async def home():
+    return {"message":"This is the home page"}
